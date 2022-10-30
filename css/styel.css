@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin: auto;
+}
+body {
+    background: linear-gradient(40deg,powderblue,plum,slategrey,orange,deepskyblue,palegreen,papayawhip,greenyellow);
+    min-height: 100vh;
+}
+.clothing {
+    margin: 100px 0;
+}
+.clothing input {
+    display: none;
+}
+.label-clothing {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(217, 179, 179, 0.87);
+    margin: 70px 15px;
+    border-radius: 10px;
+}
+.label-clothing label {
+    padding: 10px 20px;
+    background:linear-gradient(40deg,indianred,indigo,aquamarine,red,white);
+    border-radius: 10px;
+    color: white;
+    font-size:20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+
+
+/*}*/
+/*.label-clothing label:hover {*/
+/*    background: transparent;*/
+/*    border: 2px solid black;*/
+}
+.clothing img {
+    width: 340px;
+    height: 360px;>
+    object-fit: cover;
+    margin: 10px 130px;
+
+}
+#all:checked ~.all-clothing,
+#all:checked ~.dress,
+#all:checked ~.blouses,
+#all:checked ~.skirts,
+#all:checked ~.accessories,
+#all:checked ~.shoes {
+    opacity: 1;
+    transition: .2s;
+}
+
+
+#all-clothing:checked ~.dress,
+#all-clothing:checked ~.blouses,
+#all-clothing:checked ~.skirts,
+#all-clothing:checked ~.accessories,
+#all-clothing:checked ~.shoes {
+    opacity: 0.2 ;
+    transition: .2s ;
+}
+#dress:checked~.all-clothing,
+#dress:checked~.blouses,
+#dress:checked~.skirts,
+#dress:checked~.accessories,
+#dress:checked~.shoes {
+    opacity: 0.2;
+    transition:2s ;
+}
+#blouses:checked ~.all-clothing,
+#blouses:checked ~.dress,
+#blouses:checked ~.skirts,
+#blouses:checked ~.accessories,
+#blouses:checked ~.shoes {
+    opacity: 0.2;
+    transition:2s ;
+}
+#skirts:checked ~.all-clothing,
+#skirts:checked ~.dress,
+#skirts:checked ~.blouses,
+#skirts:checked ~.accessories,
+#skirts:checked ~.shoes {
+    opacity: 0.2;
+    transition:2s ;
+}
+#accessories:checked ~.all-clothing,
+#accessories:checked ~.dress,
+#accessories:checked ~.blouses,
+#accessories:checked ~.skirts,
+#accessories:checked ~.shoes {
+    opacity: 0.2;
+    transition:2s ;
+}
+#shoes:checked ~.all-clothing,
+#shoes:checked ~.dress,
+#shoes:checked ~.blouses,
+#shoes:checked ~.skirts,
+#shoes:checked ~.accessories {
+    opacity: 0.2;
+    transition:2s ;
+}
